@@ -21,32 +21,32 @@
       <ion-avatar item-start>
         <img src="assets/imgs/marty-avatar.png">
       </ion-avatar>
-      <h2>{{ nome_usuario }}</h2>
-      <p>November 5, 1955</p>
+      <h2>{{ objeto_feed.title }}</h2>
+      <p>{{ objeto_feed.date }}</p>
     </ion-item>
 
     <img src="assets/imgs/advance-card-bttf.png">
 
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+      <p>{{ objeto_feed.description }}</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
         <button ion-button icon-start clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
+          <div>{{ objeto_feed.qtde_likes }}</div>
         </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-start clear small>
           <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
+          <div>{{ objeto_feed.qtde_comments }}</div>
         </button>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          11h ago
+          {{ objeto_feed.time_comment }}
         </ion-note>
       </ion-col>
     </ion-row>
